@@ -13,9 +13,9 @@ public class FooterExists extends TestBase {
     ResultsPage resultsPage = new ResultsPage();
     @Test
     void footerIsVisible() {
-        step("На главной странице кликнуть на кнопку 'Готовое резюме'", () ->
+        step("На главной странице Нажать на кнопку 'Найти работу'", () ->
                 mainPage.footerIsVisible());
-        step("Переход на страницу консультации экспертов", () ->
+        step("На странице с вакансиями отображен футер", () ->
                 resultsPage.footerIsVisible());
     }
 }
