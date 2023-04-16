@@ -19,4 +19,4 @@ public class FooterExists extends TestBase {
                 resultsPage.footerIsVisible());
     }
 }
-}
+
