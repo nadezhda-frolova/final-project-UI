@@ -1,5 +1,7 @@
 package pages;
 
+import org.junit.jupiter.params.provider.ValueSource;
+
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 
@@ -25,9 +27,9 @@ public class MainPage {
         return this;
     }
 
-    public MainPage footerIsVisible() {
+    public MainPage footerIsVisible(String vacancies) {
 
-        $("[data-qa=search-button]").click();
+        $("#a11y-search-input").setValue(vacancies).pressEnter();
         return this;
     }
 
