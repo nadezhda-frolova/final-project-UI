@@ -13,9 +13,9 @@ import static io.qameta.allure.Allure.step;
 
 public class TestBase {
 
-    @BeforeAll
-    static void openPage() {
-        step("Открыть главную страницу 'Steam'", () ->
+    @BeforeEach
+    void openPage() {
+        step("Открыть главную страницу HH", () ->
                 open("https://kazan.hh.ru/"));
     }
 //   open("https://kazan.hh.ru/");
