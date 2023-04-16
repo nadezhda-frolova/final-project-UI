@@ -24,9 +24,9 @@ public class FooterExists extends TestBase {
     @ValueSource(
             strings = {"Аналитик","QA" }
     )
-    @ParameterizedTest
+    @ParameterizedTest (name="при переходе на страницу поиска вакансии {0} отображается футер")
     void footerIsVisible(String vacancies) {
-        step("На главной странице в поле поиска написать {0}, нажать Enter", () ->
+        step("На главной странице в поле поиска написать вакансию " + vacancies +", нажать Enter", () ->
                 mainPage.footerIsVisible(vacancies));
         step("На странице с вакансиями отображен футер", () ->
                 resultsPage.footerIsVisible());
