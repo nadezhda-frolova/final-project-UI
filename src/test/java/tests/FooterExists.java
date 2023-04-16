@@ -22,7 +22,7 @@ public class FooterExists extends TestBase {
     //resultsPage.footerIsVisible());
     //}
     @ValueSource(
-            strings = {"QA", "Аналитик"}
+            strings = {"Аналитик","QA" }
     )
     @ParameterizedTest
     void footerIsVisible(String vacancies) {
