@@ -17,8 +17,6 @@ public class WebDriver {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         ChromeOptions chromeOptions = new ChromeOptions();
 
-        //chromeOptions.addArguments("--lang=en-en");
-
         String remoteUrl = WebDriver.config.getRemoteUrl();
         if (remoteUrl != null) {
             capabilities.setCapability("enableVNC", true);

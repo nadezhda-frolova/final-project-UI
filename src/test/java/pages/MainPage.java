@@ -1,7 +1,5 @@
 package pages;
 
-import org.junit.jupiter.params.provider.ValueSource;
-
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 

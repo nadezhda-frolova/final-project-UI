@@ -1,7 +1,5 @@
 package pages;
 
-import com.codeborne.selenide.conditions.Visible;
-
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
@@ -31,6 +29,7 @@ public class ResultsPage {
         $(".Hk5ajsi___promo-button-container").shouldHave(text("Какие задачи поможет решить эксперт?"));
         return this;
     }
+
     public ResultsPage footerIsVisible() {
         $("[data-qa=footer]").shouldBe(visible);
         return this;

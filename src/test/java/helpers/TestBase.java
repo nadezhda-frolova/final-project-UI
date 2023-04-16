@@ -15,10 +15,10 @@ public class TestBase {
 
     @BeforeEach
     void openPage() {
-        step("Открыть главную страницу HH", () ->
+        step("Открыть главную страницу HeadHunter Казань", () ->
                 open("https://kazan.hh.ru/"));
     }
-//   open("https://kazan.hh.ru/");
+
     @BeforeAll
     static void driverConfigure() {
         WebDriver.configure();
