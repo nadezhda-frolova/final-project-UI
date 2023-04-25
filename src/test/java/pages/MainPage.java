@@ -25,9 +25,5 @@ public class MainPage {
         return this;
     }
 }
-        //public MainPage footerIsVisible(String vacancies) {
-
-       // $("#a11y-search-input").setValue(vacancies).pressEnter();
-        //return this;
 
 

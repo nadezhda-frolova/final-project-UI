@@ -21,8 +21,10 @@ public class ResultsPage {
     }
 
     public ResultsPage checkRegistrationPageOpens() {
-        $("[data-qa=bloko-header-1]").shouldHave(text("Регистрация соискателя"));
+        $("[data-qa=signup]").shouldHave(text("Создать резюме"));
         return this;
+        //data-qa="signup"
+        //Создать резюме
     }
 
     public ResultsPage checkExpertResumePageOpened() {
