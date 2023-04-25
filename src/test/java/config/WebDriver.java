@@ -13,6 +13,7 @@ public class WebDriver {
         Configuration.browser = WebDriver.config.getBrowserName();
         Configuration.browserVersion = WebDriver.config.getBrowserVersion();
         Configuration.browserSize = WebDriver.config.getBrowserSize();
+        Configuration.pageLoadStrategy = "eager";
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         ChromeOptions chromeOptions = new ChromeOptions();

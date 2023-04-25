@@ -1,36 +1,35 @@
 package pages;
 
 import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 
 public class ResultsPage {
-    public ResultsPage resultsFound() {
+    public ResultsPage checkResultsFound() {
         $("[data-qa=bloko-header-3]").shouldHave(text("Найдено"));
         return this;
     }
 
-    public ResultsPage qaVacanciesFound() {
-        $("[data-qa=wizard-search-name]").shouldHave(text("QA"));
+    public ResultsPage verifySearchFieldResult(String vacancies) {
+        $(".bloko-input-text-wrapper_icon-right").$("[value=vacancies]");
         return this;
     }
 
-    public ResultsPage loginButtonExists() {
+    public ResultsPage checkLoginButton() {
         $("[data-qa=login]").shouldHave(text("Войти"));
         return this;
     }
 
-    public ResultsPage registrationPageOpened() {
+    public ResultsPage checkRegistrationPageOpens() {
         $("[data-qa=bloko-header-1]").shouldHave(text("Регистрация соискателя"));
         return this;
     }
 
-    public ResultsPage helpOfExpertsPageOpened() {
+    public ResultsPage checkExpertResumePageOpened() {
         $(".Hk5ajsi___promo-button-container").shouldHave(text("Какие задачи поможет решить эксперт?"));
         return this;
     }
 
-    public ResultsPage footerIsVisible() {
+    public ResultsPage checkFooterIsVisible() {
         $("[data-qa=footer]").shouldBe(visible);
         return this;
     }
